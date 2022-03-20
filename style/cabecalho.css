@@ -1,0 +1,33 @@
+.cabecalho {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding: 24px;
+	background-color: var(--azul-marinho);
+	height: 55px;
+}
+
+.cabecalho__logo {
+	height: 100px;
+}
+
+.cabecalho__navegacao {
+	display: flex;
+	flex-direction: row;
+	gap: 32px;
+}
+
+.cabecalho__link {
+	text-decoration: none;
+	font-family: var(--montserrat);
+	color: var(--branco);
+	font-size: 18px;
+	padding: 12px;
+}
+
+.cabecalho__link:hover {
+	background-color: rgba(177, 195, 207, 0.53);
+	border-radius: 5px;
+	cursor: pointer;
+}
