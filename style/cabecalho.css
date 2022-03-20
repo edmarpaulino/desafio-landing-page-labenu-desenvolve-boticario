@@ -27,7 +27,7 @@
 }
 
 .cabecalho__link:hover {
-	background-color: rgba(177, 195, 207, 0.53);
+	background-color: var(--background-hover);
 	border-radius: 5px;
 	cursor: pointer;
 }
