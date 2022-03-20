@@ -10,71 +10,71 @@
     <link rel="stylesheet" href="style/reset.css">
 </head>
 <body>
-    <header>
-        <img src="assets/f4life.png" alt="Logo da F4Life">
+    <header class="cabecalho container">
+        <img class="cabecalho__logo" src="assets/f4life.png" alt="Logo da F4Life">
 
-        <nav>
-            <a href="#">Quem Somos</a>
-            <a href="#">Imóveis</a>
-            <a href="#">Fale Conosco</a>
+        <nav class="cabecalho__navegacao">
+            <a class="cabecalho__link" href="#quem_somos__id">Quem Somos</a>
+            <a class="cabecalho__link" href="#imoveis__id">Imóveis</a>
+            <a class="cabecalho__link" href="#fale_conosco__id">Fale Conosco</a>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Quem Somos</h2>
-            <h3>F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias. </h3>
-            <p>Similar aos modelos de Quinto Andar e Loft, a empresa realiza reformas e prepara moradias para recepção de pessoas universitárias em um ambiente específico e otimizado para a vida de graduação.</p>
-            <img src="images/quem-somos.jpg">
+        <section id="quem_somos__id" class="quem_somos container">
+            <h2 class="quem_somos__titulo">Quem Somos</h2>
+            <h3 class="quem_somos__subtitulo">F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias. </h3>
+            <p class="quem_somos__paragrafo">Similar aos modelos de Quinto Andar e Loft, a empresa realiza reformas e prepara moradias para recepção de pessoas universitárias em um ambiente específico e otimizado para a vida de graduação.</p>
+            <img class="quem_somos__imagem" src="images/quem-somos.jpg" alt="Mulher olhando sorrindo para você">
         </section>
 
-        <section>
-            <h2>Imóveis</h2>
-            <p>Preços que cabem no seu bolso.</p>
-            <ul>
-                <li>
-                    <h3>Moradia compartilhada</h3>
-                    <p>Preços à partir de R$500</p>
-                    <article>
-                        <img src="images/moradia-compartilhada.jpg">
-                        <p>Dividir casa ou apartamento é uma tendência cada vez mais presente no Brasil e no mundo, principalmente nas grandes cidades, visto que o custo de vida nesses lugares pode ser bastante alto e difícil de manter sozinho.</p>
+        <section id="imoveis__id" class="imoveis container">
+            <h2 class="imoveis__titulo">Imóveis</h2>
+            <h3 class="imoveis__subtitulo">Preços que cabem no seu bolso.</h3>
+            <ul class="imoveis__planos">
+                <li class="planos__cartao cartao--compartilhada">
+                    <h3 class="planos__titulo">Moradia compartilhada</h3>
+                    <p class="planos__preco">Preços à partir de <strong>$500</strong></p>
+                    <article class="planos__conteudo">
+                        <img class="conteudo__imagem" src="images/moradia-compartilhada.jpg">
+                        <p class="conteudo__texto">Dividir casa ou apartamento é uma tendência cada vez mais presente no Brasil e no mundo, principalmente nas grandes cidades, visto que o custo de vida nesses lugares pode ser bastante alto e difícil de manter sozinho.</p>
                     </article>
                 </li>
 
-                <li>
-                    <h3>Kitnets</h3>
-                    <p>Preços à partir de R$1.000</p>
-                    <article>
-                        <img src="images/kitnet.jpg">
-                        <p>Um apartamento pequeno é a solução para quem pretende gastar pouco ou não quer perder muito tempo arrumando o lar.</p>
+                <li class="planos__cartao cartao--kitnets">
+                    <h3 class="planos__titulo">Kitnets</h3>
+                    <p class="planos__preco">Preços à partir de <strong>$1.000</strong></p>
+                    <article class="planos__conteudo">
+                        <p class="conteudo__texto">Um apartamento pequeno é a solução para quem pretende gastar pouco ou não quer perder muito tempo arrumando o lar.</p>
+                        <img class="conteudo__imagem" src="images/kitnet.jpg">
                     </article>
                 </li>
             </ul>
         </section>
 
-        <section>
-            <h2>Fale Conosco</h2>
-            <img src="images/fale-conosco.jpg">
-            <div>
-                <form>
-                    <label for="">E-mail</label>
-                    <input type="email" placeholder="seuemail@dominio.com" required>
-                    <label for="">Mensagem</label>
-                    <textarea cols="30" rows="6" required></textarea>
-                    <button>Enviar</button>
+        <section id="fale_conosco__id" class="fale_conosco container">
+            <img class="fale_conosco__imagem" src="images/fale-conosco.jpg">
+            <div class="fale_conosco__conteudo">
+                <h2 class="fale_conosco__titulo">Fale Conosco</h2>
+                <form class="fale_conosco__formulario">
+                    <label for="input__email__id">E-mail</label>
+                    <input id="input__email__id" type="email" placeholder="seuemail@dominio.com" required>
+                    <label for="input__mensagem__id">Mensagem</label>
+                    <textarea id="input__mensagem__id" cols="30" rows="6" required></textarea>
+                    <input id="input__enviar__id" class="input__enviar" type="submit" value="Enviar">
                 </form>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="rodape container">
         <ul>
-            <li><a><img src="images/linkedin-icon.svg"></a></li>
-            <li><a><img src="images/facebook-icon.svg"></a></li>
-            <li><a><img src="images/instagram-icon.svg"></a></li>
-            <li><a><img src="images/twitter-icon.svg"></a></li>
+            <li><a class="rodape__media" href="https://br.linkedin.com/" target="blank"><img src="images/linkedin-icon.svg" alt="Logo do LinkedIn"></a></li>
+            <li><a class="rodape__media" href="https://www.facebook.com/" target="blank"><img src="images/facebook-icon.svg" alt="Logo do Facebook"></a></li>
+            <li><a class="rodape__media" href="https://www.instagram.com/" target="blank"><img src="images/instagram-icon.svg" alt="Logo do Instagram"></a></li>
+            <li><a class="rodape__media" href="https://twitter.com/" target="blank"><img src="images/twitter-icon.svg" alt="Logo do Twitter"></a></li>
         </ul>
-        <p>&copy; Copyright</p>
+        <p class="copyright">&copy; Copyright F4Life - 2022</p>
     </footer>
 </body>
 </html>
