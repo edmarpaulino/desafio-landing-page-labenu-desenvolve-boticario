@@ -1,5 +1,39 @@
+
+Description
+Um lugar para encontrar sua próxima moradia de forma fácil!
+
+Title
+F4Life - Moradias universitárias
+
+Quem Somos
+Imóveis
+Fale Conosco
+
+Quem Somos
+
 F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias. 
+
 Similar aos modelos de Quinto Andar e Loft, 
 a empresa realiza reformas e prepara moradias 
 para recepção de pessoas universitárias em um ambiente específico 
 e otimizado para a vida de graduação.
+
+Imóveis
+
+Preços que cabem no seu bolso.
+
+Moradia compartilhada
+Preços à partir de $500
+Frase moradia compartilhada // buscar
+
+Kitnets
+Preços à partir de $1.000
+Um apartamento pequeno é a solução para quem pretende gastar pouco ou não quer perder muito tempo arrumando o lar.
+
+Fale Conosco
+Nome
+Sobrenome
+Email
+Mensagem
+
+Nos siga em nossas redes sociais
