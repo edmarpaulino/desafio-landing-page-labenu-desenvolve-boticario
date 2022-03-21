@@ -13,4 +13,9 @@
 
 body {
 	font-family: var(--opensans);
+	background-color: var(--ciano);
+}
+
+img {
+	border-radius: 5px;
 }

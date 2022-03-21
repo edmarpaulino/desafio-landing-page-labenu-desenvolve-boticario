@@ -1,0 +1,49 @@
+.quem_somos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 48px 10vw;
+	gap: 48px;
+	border-bottom: 0.5px solid var(--azul-marinho);
+}
+
+.quem_somos__conteudo {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	color: var(--azul-marinho);
+}
+
+.quem_somos__titulo {
+	font-family: var(--montserrat);
+	font-size: 3rem;
+}
+
+.quem_somos__subtitulo {
+	font-size: 1.75rem;
+	margin-top: 1.5rem;
+}
+
+.quem_somos__texto {
+	margin-top: 2rem;
+	font-size: 1.5rem;
+}
+
+.quem_somos__imagem {
+	display: none;
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+	.quem_somos__imagem {
+		display: initial;
+		height: 400px;
+		box-shadow:  5px 4px var(--azul-marinho);
+	}
+}
