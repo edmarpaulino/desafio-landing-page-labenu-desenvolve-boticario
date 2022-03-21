@@ -11,27 +11,55 @@
         <link rel="stylesheet" href="style/base.css">
         <link rel="stylesheet" href="style/cabecalho.css">
         <link rel="stylesheet" href="style/quem-somos.css">
+        <link rel="stylesheet" href="style/imoveis.css">
     </head>
     <body>
         <header class="cabecalho">
             <img class="cabecalho__logo" src="images/logo-f4life.png" alt="Lodo da F4Life">
+
             <nav class="cabecalho__navegacao">
                 <ul>
                     <li class="cabecalho__link"><a href="#quem_somos">Quem Somos</a></li>
-                    <li class="cabecalho__link"><a href="#">Imóveis</a></li>
+                    <li class="cabecalho__link"><a href="#imoveis">Imóveis</a></li>
                     <li class="cabecalho__link"><a href="#">Fale Conosco</a></li>
                 </ul>
             </nav>
         </header>
+
         <main class="principal">
             <section id="quem_somos" class="quem_somos">
+                <img class="quem_somos__imagem" src="images/quem-somos.jpg" alt="Mulher sorrindo olhando para você">
+
                 <article class="quem_somos__conteudo">
                     <h1 class="quem_somos__titulo">Quem Somos</h1>
                     <h2 class="quem_somos__subtitulo">F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias.</h2>
                     <p class="quem_somos__texto">Similar aos modelos de Quinto Andar e Loft, a empresa realiza reformas e prepara moradias para recepção de pessoas universitárias em um ambiente específico e otimizado para a vida de graduação.</p>
                 </article>
-                <img class="quem_somos__imagem" src="images/quem-somos.jpg" alt="Mulher sorrindo olhando para você">
             </section>
+
+            <section id="imoveis" class="imoveis">
+                <h1 class="imoveis__titulo">Imóveis</h1>
+                <h2 class="imoveis__subtitulo">Preços que cabem no seu bolso.</h2>
+
+                <div class="imoveis__cartao imoveis__cartao__moradia">
+                    <img class="imoveis__imagem imoveis__imagem__moradia" src="images/moradia-compartilhada.jpg" alt="Pessoas felizes reunidas em volta de uma mesa">
+
+                    <article class="imoveis__conteudo imoveis__conteudo__moradia">
+                        <h2 class="imoveis__conteudo__titulo">Moradia compartilhada</h2>
+                        <p class="imoveis__conteudo__preco">Preços à partir de <strong>$500</strong></p>
+                    </article>
+                </div>
+
+                <div class="imoveis__cartao imoveis__cartao__kitnet">
+                    <img class="imoveis__imagem imoveis__imagem__kitnet" src="images/kitnet.jpg" alt="Imagem de um apartamento aconchegante e pequeno">
+
+                    <article class="imoveis__conteudo imoveis__conteudo__kitnet">
+                        <h2 class="imoveis__conteudo__titulo">Kitnets</h2>
+                        <p class="imoveis__conteudo__preco">Preços à partir de <strong>$1.000</strong></p>
+                    </article>
+                </div>
+            </section>
+
         </main>
     </body>
 </html>

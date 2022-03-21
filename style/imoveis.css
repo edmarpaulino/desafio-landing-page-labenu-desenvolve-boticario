@@ -1,0 +1,124 @@
+.imoveis {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 48px 10vw;
+	border-bottom: 0.5px solid var(--azul-marinho);
+}
+
+.imoveis__titulo {
+	font-family: var(--montserrat);
+	font-size: 3rem;
+}
+
+.imoveis__subtitulo {
+	font-size: 1.75rem;
+	margin-top: 1.5rem;
+	text-align: center;
+}
+
+.imoveis__cartao {
+	background-color: var(--azul-marinho);
+	margin-top: 2rem;
+	border-radius: 5px;
+	width: 90%;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.imoveis__imagem {
+	display: none;
+	height: 300px;
+}
+
+
+.imoveis__conteudo {
+	color: var(--branco);
+	text-align: center;
+}
+
+.imoveis__conteudo__titulo {
+	font-family: var(--montserrat);
+	font-size: 1.25rem;
+	color: var(--ciano);
+}
+
+.imoveis__conteudo__preco {
+	margin-top: 1rem;
+	font-size: 1rem;
+}
+
+.imoveis__conteudo__preco strong {
+	color: var(--ciano);
+	font-weight: 700;
+}
+
+
+@media screen and (min-width: 480px) {
+	.imoveis__cartao {
+		height: 500px;
+		width: 460px;
+		max-width: 600px;
+		justify-content: space-between;
+	}
+
+	.imoveis__imagem {
+		display: block;
+		border-radius: 5px 5px 0 0;
+	}
+
+	.imoveis__conteudo__preco {
+		margin-bottom: 5rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.imoveis__cartao {
+		height: 300px;
+		width: 1200px;
+		max-width: 1000px;
+		align-items: center;
+	}
+
+	.imoveis__cartao__moradia {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.imoveis__cartao__kitnet {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.imoveis__imagem {
+		height: 300px;
+	}
+
+	.imoveis__imagem__moradia {
+		border-radius: 5px 0 0 5px;
+	}
+
+	.imoveis__imagem__kitnet {
+		border-radius: 0 5px 5px 0;
+	}
+
+	.imoveis__conteudo__moradia {
+		margin-right: 80px;
+	}
+
+	.imoveis__conteudo__kitnet {
+		margin-left: 130px;
+	}
+
+	.imoveis__conteudo__titulo {
+		font-size: 2rem;
+	}
+
+	.imoveis__conteudo__preco {
+		font-size: 1.5rem;
+		margin-bottom: 0rem;
+	}
+}

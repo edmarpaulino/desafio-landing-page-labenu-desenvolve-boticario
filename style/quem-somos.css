@@ -1,6 +1,6 @@
 .quem_somos {
 	display: flex;
-	flex-direction: row;
+	flex-direction: row-reverse;
 	justify-content: space-around;
 	align-items: center;
 	padding: 48px 10vw;
@@ -34,6 +34,8 @@
 
 .quem_somos__imagem {
 	display: none;
+	height: 400px;
+	box-shadow:  5px 4px var(--azul-marinho);
 }
 
 @media screen and (min-width: 480px) {
@@ -42,8 +44,6 @@
 
 @media screen and (min-width: 1024px) {
 	.quem_somos__imagem {
-		display: initial;
-		height: 400px;
-		box-shadow:  5px 4px var(--azul-marinho);
+		display: block;
 	}
 }
