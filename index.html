@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="style/cabecalho.css">
         <link rel="stylesheet" href="style/quem-somos.css">
         <link rel="stylesheet" href="style/imoveis.css">
+        <link rel="stylesheet" href="style/fale-conosco.css">
     </head>
     <body>
         <header class="cabecalho">
@@ -21,7 +22,7 @@
                 <ul>
                     <li class="cabecalho__link"><a href="#quem_somos">Quem Somos</a></li>
                     <li class="cabecalho__link"><a href="#imoveis">Imóveis</a></li>
-                    <li class="cabecalho__link"><a href="#">Fale Conosco</a></li>
+                    <li class="cabecalho__link"><a href="#fale_conosco">Fale Conosco</a></li>
                 </ul>
             </nav>
         </header>
@@ -60,6 +61,27 @@
                 </div>
             </section>
 
+            <section id="fale_conosco" class="fale_conosco">
+                <img class="fale_conosco__imagem" src="images/fale-conosco.jpg" alt="Mulher sorrindo com um tablet na mão">
+                <form class="fale_conosco__formulario">
+                    <fieldset class="fale_conosco__campos">
+                        <legend class="fale_conosco__titulo">Fale Conosco</legend>
+
+                        <label for="nome" class="fale_conosco__label">Nome:</label>
+                        <input id="nome" class="fale_conosco__input" type="text" required placeholder="Digite aqui seu nome">
+                        
+                        <label for="email" class="fale_conosco__label">E-mail:</label>
+                        <input id="email" class="fale_conosco__input" type="email" required placeholder="seuemail@dominio.com">
+                        
+                        <label for="mensagem" class="fale_conosco__label">Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" class="fale_conosco__input" required placeholder="Digite aqui sua mensagem"></textarea>
+                        
+                        <input type="submit" value="Enviar" class="fale_conosco__botao">
+                    </fieldset>
+                </form>
+            </section>
         </main>
+
+        
     </body>
 </html>

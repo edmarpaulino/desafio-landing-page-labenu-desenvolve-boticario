@@ -1,0 +1,72 @@
+.fale_conosco {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 48px 10vw;
+	gap: 48px;
+}
+
+.fale_conosco__imagem {
+	display: none;
+	height: 600px;
+	box-shadow:  5px 4px var(--azul-marinho);
+}
+
+.fale_conosco__campos {
+	display: flex;
+	flex-direction: column;
+	width: 90vw;
+}
+
+.fale_conosco__titulo {
+	font-family: var(--montserrat);
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.fale_conosco__label {
+	font-family: var(--montserrat);
+	font-size: 1.5rem;
+	margin-top: 1rem;
+}
+
+.fale_conosco__input {
+	border-radius: 5px;
+	border: 1px solid var(--azul-marinho);
+	padding: 12px;
+	font-size: 1rem;
+	margin-top: 0.5rem;
+}
+
+#mensagem {
+	height: 300px;
+}
+
+.fale_conosco__botao {
+	border-radius: 5px;
+	background-color: var(--azul-marinho);
+	padding: 24px;
+	margin: 2rem auto;
+	width: 200px;
+	font-size: 24px;
+	font-weight: 700;
+	color: var(--branco);
+}
+
+@media screen and (min-width: 480px) {
+	.fale_conosco__campos {
+		width: 500px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.fale_conosco__imagem {
+		display: block;
+	}
+
+	.fale_conosco__campos {
+		width: 500px;
+	}
+}
