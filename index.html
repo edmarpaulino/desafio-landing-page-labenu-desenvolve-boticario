@@ -9,7 +9,6 @@
 
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/base.css">
-    <link rel="stylesheet" href="style/cabecalho.css">
 </head>
 <body>
     <header class="cabecalho container">
@@ -22,11 +21,13 @@
         </nav>
     </header>
 
-    <main>
+    <main class="principal">
         <section id="quem_somos__id" class="quem_somos container">
-            <h2 class="quem_somos__titulo">Quem Somos</h2>
-            <h3 class="quem_somos__subtitulo">F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias. </h3>
-            <p class="quem_somos__paragrafo">Similar aos modelos de Quinto Andar e Loft, a empresa realiza reformas e prepara moradias para recepção de pessoas universitárias em um ambiente específico e otimizado para a vida de graduação.</p>
+            <article class="quem_somos__conteudo">
+                <h2 class="quem_somos__titulo">Quem Somos</h2>
+                <h3 class="quem_somos__subtitulo">F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias. </h3>
+                <p class="quem_somos__paragrafo">Similar aos modelos de Quinto Andar e Loft, a empresa realiza reformas e prepara moradias para recepção de pessoas universitárias em um ambiente específico e otimizado para a vida de graduação.</p>
+            </article>
             <img class="quem_somos__imagem" src="images/quem-somos.jpg" alt="Mulher olhando sorrindo para você">
         </section>
 
@@ -34,47 +35,47 @@
             <h2 class="imoveis__titulo">Imóveis</h2>
             <h3 class="imoveis__subtitulo">Preços que cabem no seu bolso.</h3>
             <ul class="imoveis__planos">
-                <li class="planos__cartao cartao--compartilhada">
-                    <h3 class="planos__titulo">Moradia compartilhada</h3>
-                    <p class="planos__preco">Preços à partir de <strong>$500</strong></p>
+                <li class="planos__cartao">
+                    <img class="conteudo__imagem imagem--compartilhada" src="images/moradia-compartilhada.jpg">
                     <article class="planos__conteudo">
-                        <img class="conteudo__imagem" src="images/moradia-compartilhada.jpg">
+                        <h3 class="planos__titulo">Moradia compartilhada</h3>
+                        <p class="planos__preco">Preços à partir de <strong>$500</strong></p>
                         <p class="conteudo__texto">Dividir casa ou apartamento é uma tendência cada vez mais presente no Brasil e no mundo, principalmente nas grandes cidades, visto que o custo de vida nesses lugares pode ser bastante alto e difícil de manter sozinho.</p>
                     </article>
                 </li>
 
-                <li class="planos__cartao cartao--kitnets">
-                    <h3 class="planos__titulo">Kitnets</h3>
-                    <p class="planos__preco">Preços à partir de <strong>$1.000</strong></p>
+                <li class="planos__cartao">
                     <article class="planos__conteudo">
+                        <h3 class="planos__titulo">Kitnets</h3>
+                        <p class="planos__preco">Preços à partir de <strong>$1.000</strong></p>
                         <p class="conteudo__texto">Um apartamento pequeno é a solução para quem pretende gastar pouco ou não quer perder muito tempo arrumando o lar.</p>
-                        <img class="conteudo__imagem" src="images/kitnet.jpg">
                     </article>
+                    <img class="conteudo__imagem imagem--kitnet" src="images/kitnet.jpg">
                 </li>
             </ul>
         </section>
 
         <section id="fale_conosco__id" class="fale_conosco container">
             <img class="fale_conosco__imagem" src="images/fale-conosco.jpg">
-            <div class="fale_conosco__conteudo">
-                <h2 class="fale_conosco__titulo">Fale Conosco</h2>
-                <form class="fale_conosco__formulario">
-                    <label for="input__email__id">E-mail</label>
+            <form class="fale_conosco__formulario">
+                <fieldset class="fale_conosco__campos">
+                    <legend class="fale_conosco__titulo">Fale Conosco</legend>
+                    <label class="lable__titulo" for="input__email__id">E-mail</label>
                     <input id="input__email__id" type="email" placeholder="seuemail@dominio.com" required>
-                    <label for="input__mensagem__id">Mensagem</label>
-                    <textarea id="input__mensagem__id" cols="30" rows="6" required></textarea>
+                    <label class="lable__titulo" for="input__mensagem__id">Mensagem</label>
+                    <textarea id="input__mensagem__id" required></textarea>
                     <input id="input__enviar__id" class="input__enviar" type="submit" value="Enviar">
-                </form>
-            </div>
+                </fieldset>
+            </form>
         </section>
     </main>
 
     <footer class="rodape container">
-        <ul>
-            <li><a class="rodape__media" href="https://br.linkedin.com/" target="blank"><img src="images/linkedin-icon.svg" alt="Logo do LinkedIn"></a></li>
-            <li><a class="rodape__media" href="https://www.facebook.com/" target="blank"><img src="images/facebook-icon.svg" alt="Logo do Facebook"></a></li>
-            <li><a class="rodape__media" href="https://www.instagram.com/" target="blank"><img src="images/instagram-icon.svg" alt="Logo do Instagram"></a></li>
-            <li><a class="rodape__media" href="https://twitter.com/" target="blank"><img src="images/twitter-icon.svg" alt="Logo do Twitter"></a></li>
+        <ul class="rodape__media">
+            <li><a href="https://br.linkedin.com/" target="blank"><img src="images/linkedin-icon.svg" alt="Logo do LinkedIn"></a></li>
+            <li><a href="https://www.facebook.com/" target="blank"><img src="images/facebook-icon.svg" alt="Logo do Facebook"></a></li>
+            <li><a href="https://www.instagram.com/" target="blank"><img src="images/instagram-icon.svg" alt="Logo do Instagram"></a></li>
+            <li><a href="https://twitter.com/" target="blank"><img src="images/twitter-icon.svg" alt="Logo do Twitter"></a></li>
         </ul>
         <p class="copyright">&copy; Copyright F4Life - 2022</p>
     </footer>

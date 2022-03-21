@@ -9,13 +9,3 @@
 	--montserrat: 'Montserrat', sans-serif;
 	--opensans: 'Open Sans', sans-serif;
 }
-
-body {
-	font-family: var(--opensans);
-	background-color: var(--ciano);
-}
-
-.container {
-	padding-left: 6%;
-	padding-right: 6%;
-}
