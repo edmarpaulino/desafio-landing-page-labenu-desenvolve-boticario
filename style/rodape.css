@@ -1,0 +1,26 @@
+.rodape {
+	background-color: var(--azul-marinho);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 200px;
+	padding: 24px;
+	color: var(--branco);
+}
+
+.rodape__titulo {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.rodape__media {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	gap: 32px;
+}
+
+.rodape__copyright {
+	font-size: 1rem;
+}
